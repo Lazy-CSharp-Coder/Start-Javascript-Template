@@ -27,6 +27,13 @@ function character()
   let characterLevel = 1;
   let isOnline = false;
 
+  for(let i = 0; i < 5; ++i)
+  {
+     console.log(characterName + " now level : " + i);
+        
+  }
+
+
 }
 
 character(); //  vil kjøre funksjon
