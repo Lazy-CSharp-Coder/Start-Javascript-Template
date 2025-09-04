@@ -20,6 +20,13 @@ let isPresent = true; // boolean
 
 // Regular Function
 
-function character() {
+function character() 
+{
   console.log("Er inne i funskjon character()");
+  const characterName = "Haplo";
+  let characterLevel = 1;
+  let isOnline = false;
+
 }
+
+character(); //  vil kjøre funksjon
