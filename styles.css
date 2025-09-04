@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* BODY */
+body {
+  margin: 0;
+  font-family: 'Roboto';
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.navList {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  list-style-type: none;
+}
+
+.hamburgerIcon {
+  /* height:32px;
+     width:32px; 
+  */
+  display: none;
+}
+
+/* HEADER styling mobil L or less */
+@media (max-width: 426px) {
+  body {
+    background-color: red;
+  }
+  .navList {
+    display: none;
+  }
+  .hamburgerIcon {
+    display: flex;
+  }
+}
+
+@media (min-width: 427px) and (max-width: 1023px) {
+  body {
+    /* background-color: green; */
+  }
+}
+
+@media (min-width: 1024px) {
+}
+
+/* MAIN */
+section {
+  height: 100vh;
+}
+
+.hero {
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: center;
+}
+
+.heroText {
+  width: 50%;
+}
+
+.heroImg {
+  width: 50%;
+}
+
+@media (max-width: 426px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .heroText,
+  .heroImg {
+    width: 100%;
+  }
+}
+
+/* FOOTER */
+footer {
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+}
