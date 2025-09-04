@@ -27,6 +27,7 @@ header {
   */
   display: none;
 }
+
 .hidden {
   display: none;
 
@@ -54,8 +55,19 @@ header {
 
 @media (min-width: 427px) and (max-width: 1023px) {
   body {
-    /* background-color: green; */
+  
+    }
+
+  .hamburgerIcon {
+    display:none;
+    
   }
+
+  .navList {
+    display: flex;
+  }
+    /* background-color: green; */
+ 
 }
 
 @media (min-width: 1024px) {
