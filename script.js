@@ -65,9 +65,10 @@ function hamburgerToggle()
 
    console.log(navListElement);
 
-   navListElement.style.display ="flex";
-
-
+  //  navListElement.style.display ="flex";   // inline styling - må skrive mye - legg til classenavn i CSS
+  //  navListElement.style.flex-direction = "column";
+   navListElement.classList.add("show");
+   navListElement.classList.remove("hidden");
 
 }
 

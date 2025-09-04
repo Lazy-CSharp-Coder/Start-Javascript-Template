@@ -27,15 +27,26 @@ header {
   */
   display: none;
 }
+.hidden {
+  display: none;
+
+}
+
+.show {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
 
 /* HEADER styling mobil L or less */
 @media (max-width: 426px) {
   body {
     background-color: red;
   }
-  .navList {
+  /* .navList {
     display: none;
-  }
+  } */
   .hamburgerIcon {
     display: flex;
   }
