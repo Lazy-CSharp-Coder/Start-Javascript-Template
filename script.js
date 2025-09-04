@@ -25,15 +25,41 @@ function character()
   console.log("Er inne i funskjon character()");
   const characterName = "Haplo";
   let characterLevel = 1;
-  let isOnline = false;
+  let isOnline = true;
 
-  for(let i = 0; i < 5; ++i)
-  {
-     console.log(characterName + " now level : " + i);
-        
-  }
+  // Variable chaining
 
+  console.log("Welcome back : " + characterName + "\nLevel : " + characterLevel + "\nOnline : " + isOnline); 
+  // if(isOnline) console.log("currently not online")
+  // else console.log("is online - Ready to play")
+
+  // Template literal
+
+  console.log(`Welcome back : ${characterName} \nLevel : ${characterLevel} \nOnline :  ${isOnline ? `online - ready to play`: `offline`}`);
+
+  // for(let i = 0; i < 10; ++i)
+  // {
+  //    console.log(characterName + " now level : " + i);
+  //    if(i == 4)
+  //    { 
+  //     console.log("Level cannot be higher than 4. Terminating loop");
+  //     break;
+  //    }
+  // }
 
 }
 
+// function call
+
 character(); //  vil kjøre funksjon
+
+//
+//
+
+function hamburgerToggle()
+{
+   console.log("Er inne i funksjon");
+}
+
+
+
