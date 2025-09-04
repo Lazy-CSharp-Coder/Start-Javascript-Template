@@ -59,6 +59,16 @@ character(); //  vil kjøre funksjon
 function hamburgerToggle()
 {
    console.log("Er inne i funksjon");
+
+   const navListElement = document.querySelector(".navList");  // kobler variabel til html element
+   // Bevist brukt klass for kun kun ett element på det klassenavnet - bytt til id hvis flere
+
+   console.log(navListElement);
+
+   navListElement.style.display ="flex";
+
+
+
 }
 
 globalThis.hamburgerToggle = hamburgerToggle;
