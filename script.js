@@ -61,5 +61,5 @@ function hamburgerToggle()
    console.log("Er inne i funksjon");
 }
 
-
+globalThis.hamburgerToggle = hamburgerToggle;
 
