@@ -72,12 +72,14 @@ function hamburgerToggle()
     {
       navListElement.classList.add("show");
       navListElement.classList.remove("hidden");
+      isHamburgerClicked = true;
     }
     else 
     {
       navListElement.classList.remove("show");
-      navListElement.classList.add("hidden");    
-      
+      navListElement.classList.add("hidden"); 
+      isHamburgerClicked = false;   
+     
     }
 }
 
