@@ -72,8 +72,8 @@ function hamburgerToggle()
     {
       navListElement.classList.add("show");
       navListElement.classList.remove("hidden");
-      textElement.remove("show");
-      textElement.add("hidden");
+      // textElement.remove("show");
+      // textElement.add("hidden");
       isHamburgerClicked = true;
     }
     else 
@@ -81,8 +81,8 @@ function hamburgerToggle()
       navListElement.classList.remove("show");
       navListElement.classList.add("hidden"); 
       isHamburgerClicked = false;   
-      textElement.remove("hidden");
-      textElement.add("show");
+      // textElement.remove("hidden");
+      // textElement.add("show");
      
     }
   

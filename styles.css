@@ -43,9 +43,14 @@ header {
    right:0;
    position:fixed;
    z-index: 1000;
-   transition: transform 0.2s ease-in-out;
+   transform: translateX(100%);
+   transition: transform 0.3s ease-in-out;
 
 
+}
+
+.show.open {
+  transform: translateX(0);
 }
 
 /* HEADER styling mobil L or less */
