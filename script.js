@@ -55,6 +55,7 @@ character(); //  vil kjøre funksjon
 
 //
 //
+let isHamburgerClicked = false;
 
 function hamburgerToggle()
 {
@@ -67,9 +68,17 @@ function hamburgerToggle()
 
   //  navListElement.style.display ="flex";   // inline styling - må skrive mye - legg til classenavn i CSS
   //  navListElement.style.flex-direction = "column";
-   navListElement.classList.add("show");
-   navListElement.classList.remove("hidden");
-
+    if(!isHamburgerClicked) 
+    {
+      navListElement.classList.add("show");
+      navListElement.classList.remove("hidden");
+    }
+    else 
+    {
+      navListElement.classList.remove("show");
+      navListElement.classList.add("hidden");    
+      
+    }
 }
 
 globalThis.hamburgerToggle = hamburgerToggle;
