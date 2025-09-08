@@ -63,7 +63,7 @@ function hamburgerToggle()
 
    const navListElement = document.querySelector(".navList");  // kobler variabel til html element
    // Bevist brukt klass for kun kun ett element på det klassenavnet - bytt til id hvis flere
-
+   const textElement = document.querySelector(".heroText");
    console.log(navListElement);
 
   //  navListElement.style.display ="flex";   // inline styling - må skrive mye - legg til classenavn i CSS
@@ -72,6 +72,8 @@ function hamburgerToggle()
     {
       navListElement.classList.add("show");
       navListElement.classList.remove("hidden");
+      textElement.remove("show");
+      textElement.add("hidden");
       isHamburgerClicked = true;
     }
     else 
@@ -79,8 +81,11 @@ function hamburgerToggle()
       navListElement.classList.remove("show");
       navListElement.classList.add("hidden"); 
       isHamburgerClicked = false;   
+      textElement.remove("hidden");
+      textElement.add("show");
      
     }
+  
 }
 
 globalThis.hamburgerToggle = hamburgerToggle;
